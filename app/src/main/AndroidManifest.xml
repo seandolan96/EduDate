@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edudate">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".Chat.ChatActivity"></activity>
+        <activity android:name=".Matches.MatchActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ChooseLoginOrRegistrationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
